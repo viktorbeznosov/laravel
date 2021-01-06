@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5f8d808-053d-49be-b763-5c5acc82c037" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/www/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +27,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -59,6 +62,7 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/www/config/database.php" />
         <option value="$PROJECT_DIR$/www/.env" />
+        <option value="$PROJECT_DIR$/www/index.php" />
       </list>
     </option>
   </component>
@@ -79,6 +83,11 @@
             <path>
               <item name="laravel.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel.loc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -128,15 +137,16 @@
       <option name="presentableId" value="Default" />
       <updated>1609922147875</updated>
       <workItem from="1609922149102" duration="10300000" />
-      <workItem from="1609955492305" duration="586000" />
+      <workItem from="1609955492305" duration="942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17572000" />
+    <option name="totallyTimeSpent" value="17928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16773163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -219,6 +229,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -227,7 +240,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
