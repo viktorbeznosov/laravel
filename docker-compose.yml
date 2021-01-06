@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/logs:/var/log/nginx
+      - ./www:/var/www/app
+    links:
+      - php
+
+  php:
+    volumes:
+      - ./www:/var/www/app
+      - ./docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+    build: ./docker/php
+    working_dir: /var/www/app
+    user: "1000:1000"
+    links:
+      - mysql
+
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/data:/var/lib/mysql
+#      - ./docker/mysql/conf/my.cnf:/etc/mysql/my.cnf
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_USERNAME: laravel
+      MYSQL_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    links:
+      - mysql
+    ports:
+      - 8001:80
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+
+
+#  composer:
+#    image: composer:1.6
+#    volumes:
+#      - ./www:/var/www/app
+#    working_dir: /var/www/app
+#    command: comopser install
