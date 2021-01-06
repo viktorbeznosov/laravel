@@ -1,5 +1,5 @@
-/docker/nginx/logs/**
-/docker/mysql/data/**
+/docker/nginx/logs/**/
+/docker/mysql/data/**/
 /node_modules
 /public/hot
 /public/storage
