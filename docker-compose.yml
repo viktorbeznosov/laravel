@@ -47,6 +47,7 @@ services:
       PMA_PORT: 3306
 
 
+#  #нихрена не работает
 #  composer:
 #    image: composer:1.6
 #    volumes:
